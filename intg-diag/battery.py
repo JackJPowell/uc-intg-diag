@@ -4,7 +4,7 @@ import asyncio
 import logging
 from typing import Any
 import psutil
-from pyee import AsyncIOEventEmitter
+from pyee.asyncio import AsyncIOEventEmitter
 
 from const import BatteryState
 
