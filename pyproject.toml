@@ -1,0 +1,13 @@
+[project]
+name = "uc-intg-diag"
+version = "0.1.0"
+description = "An Unfolded Circle integration for battery diagnostics and monitoring"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "async-timeout>=5.0.1",
+    "pyee~=12.0.0",
+    "ucapi==0.3.1",
+    "aiohttp>=3.0.0,<4.0.0",
+    "psutil>=5.9.0",
+]

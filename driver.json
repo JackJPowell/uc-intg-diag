@@ -1,0 +1,43 @@
+{
+  "driver_id": "diagnostic_driver",
+  "version": "0.1.0",
+  "min_core_api": "0.20.0",
+  "name": { "en": "Diagnostic Battery Monitor" },
+  "icon": "uc:display",
+  "description": {
+    "en": "Monitor battery health and diagnose battery life issues with Remote Two/3.",
+    "de": "Überwachen Sie die Batteriegesundheit und diagnostizieren Sie Probleme mit der Batterielebensdauer mit Remote Two/3.",
+    "fr": "Surveillez la santé de la batterie et diagnostiquez les problèmes de durée de vie de la batterie avec Remote Two/3."
+  },
+  "developer": {
+    "name": "Jack Powell",
+    "email": "jackjpowell@gmail.com",
+    "url": "https://github.com/jackjpowell"
+  },
+  "home_page": "https://github.com/JackJPowell/uc-intg-diag",
+  "setup_data_schema": {
+    "title": {
+      "en": "Integration setup",
+      "de": "Integrationssetup",
+      "fr": "Configuration de l'intégration"
+    },
+    "settings": [
+      {
+        "id": "info",
+        "label": {
+          "en": "Setup process",
+          "de": "Setup Fortschritt",
+          "fr": "Progression de la configuration"
+        },
+        "field": {
+          "label": {
+            "value": {
+              "en": "This integration will monitor your device's battery health and provide diagnostic information."
+            }
+          }
+        }
+      }
+    ]
+  },
+  "release_date": "2025-11-08"
+}
