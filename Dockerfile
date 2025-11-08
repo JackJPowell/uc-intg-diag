@@ -3,7 +3,8 @@ FROM python:3.11-slim-bullseye
 WORKDIR /app
 
 COPY ./requirements.txt requirements.txt
-RUN pip3 install --no-cache-dir --upgrade -r requirements.txt
+RUN pip3 install --no-cache-dir --upgrade -r requirements.txt || \
+    pip3 install --trusted-host pypi.org --trusted-host files.pythonhosted.org --no-cache-dir --upgrade -r requirements.txt
 RUN mkdir /config
 
 ADD . .
@@ -15,6 +16,6 @@ ENV UC_INTEGRATION_INTERFACE="0.0.0.0"
 ENV UC_INTEGRATION_HTTP_PORT="9090"
 
 ENV UC_CONFIG_HOME="/config"
-LABEL org.opencontainers.image.source https://github.com/jackjpowell/uc-intg-diag
+LABEL org.opencontainers.image.source="https://github.com/jackjpowell/uc-intg-diag"
 
 CMD ["python3", "-u", "intg-diag/driver.py"]
